@@ -1,3 +1,4 @@
+import 'package:flutter_mvvm_template/core/constants/enums/locale_keys_enum.dart';
 import 'package:flutter_mvvm_template/core/init/language/locale_keys.g.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -24,8 +25,8 @@ class LocalManager {
    // instance._preferences.set
     return;
   }
-  void setSring(LocaleKeys keys,String value) {
+  void setSring(PreferancesKeys keys,String value) {
     _preferences?.setString(keys.toString(), value);
   }
-  String getStringValue(LocaleKeys keys) => _preferences?.getString(keys.toString()) ?? '';
+  String getStringValue(PreferancesKeys keys) => _preferences?.getString(keys.toString()) ?? '';
 }

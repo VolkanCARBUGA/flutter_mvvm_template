@@ -1,4 +1,4 @@
-enum LocaleKeys{
+enum PreferancesKeys{
  TOKEN
  
 }
