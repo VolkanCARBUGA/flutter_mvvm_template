@@ -1,0 +1,4 @@
+enum LocaleKeys{
+ TOKEN
+ 
+}
